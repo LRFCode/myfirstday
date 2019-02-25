@@ -10,11 +10,15 @@
     <form method="post">
         @helper.CSRF.formField
 
-        <input type="text" name="place1" id="place1" maxlength="5" required pattern=".{1,20}" title="1 to 20 characters">
+        <input type="text" name="place1" id="place1"  required pattern=".{1,20}" title="1 to 20 characters">
         <label for="place1">Place</label><br>
 
-        <input type="text" name="place2" id="place2">
-        <label for="place2">Another Place</label><br>
+        <input type="radio" name="place2" id="place2-1"><label for="place2-1">Zoo</label>
+        <input type="radio" name="place2" id="place2-2"><label for="place2-2">Mall</label>
+        <input type="radio" name="place2" id="place2-3"><label for="place2-3">Car Wash</label>
+        <label>Another Place</label>
+
+        <br>
 
         <input type="submit" value="Create Story">
     </form>
